@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*ヘッダー*/
+header{
+    height: 90px;
+    background-color: white;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+header h1{
+    margin: 10px;
+    float: left;
+}
+
+.pfix{
+    width: 100%;
+    position: fixed;
+}
+
+.nav{
+    font-family: 'Comic Sans MS';
+    margin: 50px 20px 0;
+    list-style: none;
+    float: right;
+}
+
+.nav li{
+    padding-left: 30px;
+    text-align: center;
+    display: inline-block;
+}
+
+.nav li a{
+    color: black;
+    font-weight: bold;
+    display: block;
+    text-decoration: none;
+}
+
+.nav li a:hover{
+    color: #a9a9a9;
+    border-bottom: solid 4px #db7093;
+}
+
+/*メニューアイコン*/
+#target{
+    display: none;
+}
+
+/*メイン*/
+body,main{
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    font-family: 'ヒラギノ丸ゴ Pro W4','Hiragino Maru Gothic Pro';
+    clear: both;
+}
+
+.header{
+    height: 700px;
+    background-image: url("../img/main_visual.jpg");
+    background-size: cover;
+    position: relative;
+    margin-top: 30px;
+    display: block;
+}
+
+.header h1{
+    font-size: 100px;
+    font-family: 'Comic Sans MS';
+    opacity: 0.5;
+    position: absolute;
+    top: 90px;
+}
+
+/*メインコンテンツ*/
+.main_content{
+    background-color: #C7E6E2;
+    display: flex;
+    flex-wrap: wrap;
+    height:  50%;
+    padding: 30px 0 30px;
+}
+
+.main_content h2{
+    font-family: 'ヒラギノ角ゴ Pro W6','HiraKakuPro-W6';
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.mainbox{
+    background-color: #ffffff;
+    width: 30%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+/*ニュース*/
+.news_wrapper{
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+}
+.news_list{
+    padding-left: 0;
+    list-style: none;
+    display: inline-block;
+}
+
+.news ul li{
+    text-align: left;
+}
+
+.news li{
+    padding: 10px 30px;
+    line-height: 15px;
+}
+
+.news li p{
+    line-height: 25px;
+}
+
+.news_list a{
+    color: black;
+    text-decoration: none;
+}
+
+.news_list a:hover{
+    color: #a9a9a9;
+}
+
+.title{
+    font-size: 14px;
+    border-bottom: dashed 2px #a9a9a9;
+}
+
+/*ディスク*/
+.disc{
+    text-align: center;
+}
+
+.disc img{
+    width: 50%;
+}
+
+.disc img:hover{
+    opacity: 0.7;
+}
+
+.cate{
+    color: white;
+    background-color: #404040;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 0 20px;
+}
+
+/*ムービー*/
+.movie{
+    text-align: center;
+}
+
+.movie img{
+    width: 80%;
+    margin-top: 20px;
+}
+
+.movie img:hover{
+    opacity: 0.7;
+}
+
+/*フッター*/
+footer{
+    font-family: 'ヒラギノ丸ゴ Pro W4','Hiragino Maru Gothic Pro';
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    margin-top: auto;
+    padding: 30px 0;
+}
+
+footer p{
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.snsbtn img{
+    margin: 0 10px;
+}
+
+.snsbtn img:hover{
+    opacity: 0.7;
+}
+
+/*clearfixの設定*/
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}

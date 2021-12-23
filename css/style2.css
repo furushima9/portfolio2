@@ -1,0 +1,353 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*ヘッダー*/
+header{
+    height: 90px;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+header h1{
+    margin-left:30px;
+    float: left;
+}
+
+.nav{
+    font-family: 'Comic Sans MS';
+    margin: 50px 20px 0 0;
+    list-style: none;
+    float: right;
+}
+
+.nav li{
+    padding-left: 30px;
+    text-align: center;
+    display: inline-block;
+}
+
+.nav li a{
+    color: black;
+    font-weight: bold;
+    display: block;
+    text-decoration: none;
+}
+
+.nav li a:hover{
+    color: #a9a9a9;
+    border-bottom: solid 4px #db7093;
+}
+
+main{
+    font-family: 'ヒラギノ丸ゴ Pro W4','Hiragino Maru Gothic Pro';
+}
+
+/*メイン*/
+.wrapper{
+    width: 100%;
+    background-color: #ffffff
+}
+
+.wrapper h1{
+    font-family: 'ヒラギノ角ゴ Pro W6','HiraKakuPro-W6';
+    font-size: 40px;
+    background-color: greenyellow;
+    padding: 130px 0 50px;
+    text-align: center;
+}
+
+.n_list{
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px;
+    list-style: none;
+}
+
+.n_list li p{
+    display: block;
+    line-height: 25px;
+}
+
+.n_list a{
+    color: black;
+    text-align: left;
+    text-decoration: none;
+}
+
+.n_list a:hover{
+    color: #a9a9a9;
+}
+
+.n_info{
+    padding-bottom: 20px;
+}
+
+.n_date{
+    padding-bottom: 5px;
+}
+
+.n_title{
+    font-size: 18px;
+    border-bottom: dashed 1px #a9a9a9;
+    padding-bottom: 20px;
+}
+
+/*プロフィール*/
+.profile{
+    text-align: center;
+}
+.profile p{
+    margin: 0.5em 0px;
+}
+
+.group p,.individual p{
+    display: inline-block;
+    text-align: left;
+}
+
+.group{
+    margin-bottom: 50px;
+}
+
+.group img{
+    margin: 50px 0 30px;
+    width: 80%;
+}
+
+.group p{
+    width: 50%;
+}
+
+.sub_wrapper h1{
+    font-family:cursive/*'ヒラギノ角ゴ Pro W6','HiraKakuPro-W6'*/;
+    font-size: 40px;
+    background-color: #fdeff2;
+    padding: 50px 0 50px;
+    text-align:center;
+}
+
+.member{
+    margin-top: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: center;
+}
+
+.individual{
+    margin-bottom: 80px;
+}
+
+.icon img{
+    width: 80%;
+}
+
+.name h2{
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.name h3{
+    font-size: 20px;
+    color: #606060;
+    margin-bottom: 15px;
+}
+
+article {
+    width:65%;
+}
+
+
+aside {
+    width: 25%;
+}
+
+aside .icon img{
+    width:  80%;
+    margin:20px;
+}
+
+aside .name h2{
+    display: inline-block;
+    width: 100%;
+    margin-right:40px;
+    border-bottom: solid 1px black;
+}
+
+aside .name h3{
+    margin-top: 1em;
+    margin-right:40px;
+}
+
+aside .name p{
+    margin-top: 1em;
+    margin-right:40px;
+}
+
+/*ディスク*/
+.cd_wrapper{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+    margin: 50px 0 50px;
+}
+
+.cd_box{
+    width: 33.3%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+.cd_box img{
+    max-width: 300px;
+}
+.cd_box a{
+    color: #000000;
+    text-decoration: none;
+    display: block;
+}
+
+.cd_box a:hover{
+    opacity: 0.8;
+}
+
+.cate{
+    color: white;
+    background-color: #404040;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 0 20px;
+}
+
+.disc_name{
+    font-size: 20px;
+}
+
+.box2{
+    display: none;
+}
+
+/*コンタクト*/
+form{
+    width: 60%;
+    margin: 0 auto;
+    padding: 40px 0 40px;
+}
+
+.item{
+    display: block;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+label{
+    position: relative;
+}
+.la{
+    color: white;
+    font-size: 14px;
+    padding: 3px 5px;
+    border-radius: 3px;
+    position: absolute;
+    left: 140px;
+    width: 30px;
+    text-align: center;
+}
+
+.label_danger{
+    background-color: tomato;
+}
+
+.label_success{
+    background-color: yellowgreen;
+}
+input,textarea{
+    width: 60%;
+    float: right;
+}
+
+input[type="text"],input[type="email"]{
+    border: solid 1px #aaa;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+textarea{
+    border: solid 1px #aaa;
+    border-radius: 5px;
+    padding: 10px;
+    height: 160px;
+    font-size: 15px;
+}
+
+.btn_area{
+    text-align: center;
+    width: 80%;
+    margin-bottom: 50px;
+}
+
+input[type="submit"]{
+    background: #e0505c;
+    border: none;
+    color: white;
+    font-size:17px;
+    font-weight:bold;
+    padding: 10px 20px;
+    margin: 0 5px;
+}
+
+input[type="reset"]{
+    background: #aaa;
+    border: none;
+    color: white;
+    font-size:17px;
+    font-weight:bold;
+    padding: 10px 20px;
+    margin: 0 5px;
+}
+
+
+
+/*フッター*/
+footer{
+    font-family: 'ヒラギノ丸ゴ Pro W4','Hiragino Maru Gothic Pro';
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    margin-top: auto;
+    padding: 30px 0;
+}
+
+footer p{
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.snsbtn img{
+    margin: 0 10px;
+}
+
+.snsbtn img:hover{
+    opacity: 0.7;
+}
+
+
+/*clearfixの設定*/
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns# fb:http://ogp.me/ns/fb#">
+
+<head>
+    <meta property="og:title" content="CONTACT へんてコりん official website">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="お仕事のご依頼はこちらで受け付けております。">
+    <meta property="og:url" content="https://asukas-ueda.github.io/bandofficial/.">
+    <meta property="og:site_name" content="へんてコりん official website">
+    <meta property="og:image" content="https://asukas-ueda.github.io/bandofficial/img/hentekorin_ogp.png">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>へんてコりん official website</title>
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header class="pfix">
+        <h1>
+            <a href="index.html">
+                <picture>
+                    <source media="(max-width:480px)" srcset="img/wb3.png">
+                    <img src="img/ytyX2b.png" alt="hentekorin">
+                </picture>
+            </a>
+        </h1>
+
+        <nav class="nav" id="nav_f">
+            <ul>
+                <!--<li><a href="news.html">NEWS</a></li>
+                    <li><a href="live.html">LIVE</a></li>-->
+                <li><a href="profile.html">クラブについて</a></li>
+                <li><a href="discography.html">村で見られる野鳥</a></li>
+                <li><a href="contact.php">お問い合わせ</a></li>
+            </ul>
+        </nav>
+        <div id="target">
+            <div class="target_inner">
+                <span class="target_inner_line target_inner_1" id="line1"></span>
+                <span class="target_inner_line target_inner_2" id="line2"></span>
+                <span class="target_inner_line target_inner_3" id="line3"></span>
+            </div>
+        </div>
+
+        <script src="js/jquery-3.5.0.min.js"></script>
+        <script type="text/javascript" src="js/drawer.js"></script>
+    </header>
+
+    <main>
+        <section class="wrapper">
+            <h1>お問い合わせ</h1>
+        </section>
+
+        <div class="contact_form">
+
+            <form method="post" action="formcheck.php">
+                <div class="item">
+                    <label for="name1">お名前（漢字）<strong class="la label_danger">必須</strong></label>
+                    <input type="text" name="yourname" id="name1">
+                </div>
+
+                <div class="item">
+                    <label for="name2">お名前（カナ）<strong class="la label_danger">必須</strong></label>
+                    <input type="text" name="yourname2" id="name2">
+                </div>
+
+                <div class="item">
+                    <label for="mail">メールアドレス<strong class="la label_danger">必須</strong></label>
+                    <input type="email" name="mail" id="mail">
+                </div>
+
+                <div class="item">
+                    <label for="company">会社名<strong class="la label_success">任意</strong></label>
+                    <input type="text" name="company" id="company">
+                </div>
+
+                <div class="item">
+                    <label for="comment">お問い合わせ内容<strong class="la label_danger">必須</strong></label>
+                    <textarea name="comment" id="comment"></textarea>
+                </div>
+
+                <div class="btn_area">
+                    <input type="submit" value="上記の内容で送信する">
+                </div>
+
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>yatyouclub official</p>
+        <div class="snsbtn clearfix">
+            <a href="#"><img src="img/twitter_btn.png"></a>
+            <a href="#"><img src="img/facebook_btn.png"></a>
+            <a href="#"><img src="img/instagram_btn.png"></a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
