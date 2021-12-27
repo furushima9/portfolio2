@@ -165,6 +165,10 @@ article {
     width:65%;
 }
 
+article p{
+    width: 30%;
+}
+
 
 aside {
     width: 25%;
